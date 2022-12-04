@@ -1,0 +1,229 @@
+/*Fuente importada de google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600&display=swap");
+
+/*Estilos generales*/
+* {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  border: none;
+  transition: all 0.2s linear;
+}
+
+/*Paleta de colores de la pagina*/
+:root {
+  --azul-main: #211f53;
+  --azul-light: #9796fa;
+  --negro: #161821;
+  --blanco: #f7f5e8;
+  --borde: solid 1px var(--azul-light);
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--azul-main);
+  border-radius: 0.5rem;
+}
+
+body {
+  background-color: var(--negro);
+}
+
+.side-contenedor {
+  position: fixed;
+  max-width: 20rem;
+  height: 100%;
+  top: 0;
+  left: 0;
+  gap: 3rem;
+  z-index: 1;
+  background-color: var(--azul-main);
+  border-right: var(--borde);
+}
+
+.side-contenedor .imagen {
+  width: 15rem;
+  height: 15rem;
+  margin-top: 2rem;
+  border: var(--borde);
+}
+
+.side-contenedor .imagen img {
+  width: 100%;
+}
+
+.side-contenedor .nav {
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.side-contenedor .nav a {
+  color: var(--blanco);
+  font-size: 1.2rem;
+}
+
+.side-contenedor .nav span {
+  color: var(--azul-light);
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.side-contenedor .nav a:hover {
+  color: var(--azul-light);
+  border-bottom: var(--borde);
+  margin: 0 4rem;
+}
+
+#main {
+  margin-left: 20rem;
+}
+
+#main .titular {
+  color: var(--blanco);
+  border-bottom: var(--borde);
+  margin: 0 15rem;
+  margin-bottom: 1rem;
+}
+
+#main .contenido {
+  color: var(--blanco);
+  margin: 0 10rem;
+  height: 100%;
+}
+
+#sobre-mi .contenido .contenedor-logo {
+  border: var(--borde);
+  width: 10rem;
+  height: 10rem;
+  margin-right: 2rem;
+}
+
+#sobre-mi .contenido p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+#sobre-mi .contenido span {
+  color: var(--azul-light);
+  font-weight: bolder;
+}
+
+#habilidades {
+  min-height: 80vh;
+}
+
+#habilidades .contenido p {
+  font-size: 1.2rem;
+}
+
+#habilidades .barras-container .barra {
+  margin: 1rem 0;
+}
+
+#servicios {
+  min-height: 80vh;
+}
+
+#servicios .card-contenedor {
+  width: 40rem;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+#servicios .card {
+  background-color: var(--negro);
+}
+
+#servicios .card:hover {
+  background-color: var(--azul-main);
+  transform: scale(1.1);
+}
+
+#servicios .card h4 {
+  color: var(--blanco);
+  font-weight: bolder;
+  font-size: 2rem;
+  width: fit-content;
+  background-color: rgba(89, 93, 150, 0.5);
+  border-radius: 1rem;
+}
+
+#servicios .contenido p {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+#intereses {
+  margin: 3rem 0;
+}
+
+#intereses .contenido {
+  margin-top: 2rem;
+}
+
+#intereses .contenido .row {
+  border: var(--borde);
+  padding: 2rem;
+}
+
+#intereses .contenido .row span {
+  color: var(--azul-light);
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+#intereses .contenido .row:hover {
+  background-color: var(--azul-main);
+}
+
+#contacto {
+  margin-top: 4rem;
+}
+
+#contacto .redes-cont {
+  margin: 1rem 0;
+}
+
+#contacto .redes-cont .row {
+  padding: 2rem;
+}
+
+#contacto .redes-cont .row .iconos {
+  font-size: 1.4rem;
+  gap: 1rem;
+}
+
+#contacto .redes-cont .row .iconos a {
+  color: var(--blanco);
+}
+
+#contacto .redes-cont .row .iconos a:hover {
+  color: var(--azul-light);
+}
+
+#contacto .mapa-cont .col {
+  border: var(--borde);
+}
+
+#contacto .contacto-dir {
+  margin: 1rem 0;
+}
+
+#contacto .contenido textarea {
+  resize: none;
+}

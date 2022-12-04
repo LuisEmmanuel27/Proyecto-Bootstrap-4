@@ -1,0 +1,431 @@
+/*Fuentes importadas*/
+/*Estilo glitch -> font-family: 'Rubik Glitch', cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+/*Estilo general -> font-family: 'Lato', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  border: none;
+  transition: all 0.2s linear;
+}
+
+:root {
+  --negro: rgb(15, 11, 10);
+  --blanco: rgb(255, 245, 245);
+  --rojo-main: #c73838;
+  --verde: #019428;
+  --borde: solid 1px var(--rojo-main);
+}
+
+html {
+  font-size: 62.7%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 12rem;
+}
+
+html::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--verde);
+  border-radius: 0.5rem;
+}
+
+body {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+.btn {
+  border-radius: 2rem;
+}
+
+.titular {
+  font-size: 1.5rem;
+  border-bottom: var(--borde);
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.titular a {
+  color: var(--rojo-main);
+}
+
+.titular a:hover {
+  color: var(--verde);
+}
+
+.titular span {
+  font-family: "Rubik Glitch", cursive;
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+
+.cont {
+  margin: 0 1rem;
+}
+
+img {
+  user-select: none;
+}
+
+.header {
+  padding: 2.3rem;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.header .logo-cont {
+  width: 6rem;
+  height: auto;
+}
+
+.header .logo-cont a {
+  gap: 1rem;
+  font-size: 2.3rem;
+  color: var(--negro);
+  font-family: "Rubik Glitch", cursive;
+}
+
+.header .form-inline input {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.header .form-inline button {
+  font-size: 1.4rem;
+}
+
+.header .navbar {
+  gap: 3rem;
+}
+
+.header .navbar a {
+  font-family: "Rubik Glitch", cursive;
+  color: var(--negro);
+  font-size: 2.5rem;
+}
+
+.header .navbar .unico:hover {
+  transform: scale(1.2);
+}
+
+.header .navbar .btn {
+  font-size: 2.5rem;
+  font-family: "Rubik Glitch", cursive;
+  background-color: transparent;
+  color: var(--negro);
+}
+
+.header .navbar .dropdown-menu {
+  font-size: 2rem;
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  margin-top: 0.5rem;
+}
+
+.header .navbar .dropdown-menu a:hover {
+  background-color: var(--blanco);
+}
+
+.header .botones {
+  gap: 2rem;
+}
+
+.header .botones .btn-container button {
+  font-size: 2.3rem;
+  margin-left: 1rem;
+}
+
+.header .botones .icon-container a {
+  font-size: 2.5rem;
+  color: var(--negro);
+}
+
+.header .botones .icon-container a:hover {
+  transform: rotate(90deg);
+}
+
+.banner {
+  background-image: linear-gradient(
+      rgba(250, 250, 250, 0.3),
+      rgba(250, 250, 250, 0.3)
+    ),
+    url(/images/inicio-fondo.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.banner .contenedor {
+  padding: 2rem;
+}
+
+.banner .contenedor .titulo {
+  font-family: "Rubik Glitch", cursive;
+  color: var(--negro);
+  font-size: 10rem;
+}
+
+.banner .contenedor h2 {
+  font-family: "Rubik Glitch", cursive;
+  color: var(--negro);
+  font-size: 5rem;
+}
+
+.banner .contenedor p {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-top: 2rem;
+  color: var(--negro);
+}
+
+.nav-topic .row .item {
+  height: 25vh;
+}
+
+.nav-topic .row .item .imagen-container {
+  height: 25vh;
+  cursor: pointer;
+}
+
+.nav-topic .row .item .imagen-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.nav-topic .row .item .imagen-container img:hover {
+  transform: scale(1.1);
+}
+
+.nav-topic .row .item .texto {
+  bottom: 0;
+  background-color: rgba(139, 233, 151, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 0 1rem 0 0;
+  padding: 0 5px;
+}
+
+.nav-topic .row .item .texto span {
+  font-size: 2.5rem;
+  color: var(--negro);
+}
+
+.carrusel-container .carousel-item {
+  height: 90vh;
+}
+
+.carrusel-container .carousel-item img {
+  width: 100%;
+}
+
+.nuevo-cont .row {
+  margin: 1.5rem 0;
+}
+
+.nuevo-cont .item .imagen {
+  height: 100%;
+}
+
+.nuevo-cont .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.nuevo-cont .item img:hover {
+  transform: scale(1.1);
+}
+
+.all-topicos .row {
+  margin: 3rem 0;
+}
+
+.all-topicos .item {
+  height: 50vh;
+}
+
+.all-topicos .item .imagen-container {
+  height: 50vh;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.all-topicos .item .imagen-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+}
+
+.all-topicos .item .imagen-container .fig-2:hover {
+  opacity: 0;
+}
+
+.all-topicos .item .contenido {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(139, 233, 151, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 0 1rem 0 0;
+  padding: 0 5px;
+}
+
+.all-topicos .item .contenido span {
+  font-size: 3rem;
+  color: var(--negro);
+  text-transform: uppercase;
+}
+
+.acerca-de .row {
+  margin-top: 2rem;
+}
+
+.acerca-de .imagen-container img {
+  border-radius: 2rem;
+}
+
+.acerca-de .item .titulo-cont {
+  margin-bottom: 1rem;
+}
+
+.acerca-de .item .titulo-cont h1 {
+  font-size: 4rem;
+}
+
+.acerca-de .item .cont {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.acerca-de .item .icon-container {
+  width: 50rem;
+  gap: 5rem;
+}
+
+.acerca-de .item .icon-container img:hover {
+  transform: scale(1.1);
+}
+
+.luis-info {
+  background-image: linear-gradient(
+      rgba(250, 250, 250, 0.3),
+      rgba(250, 250, 250, 0.3)
+    ),
+    url(/images/banner-luis.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 10rem 0;
+  color: var(--negro);
+}
+.luis-info .item .imagen-container img {
+  border: var(--borde);
+}
+
+.luis-info .item .contenido {
+  padding: 3rem;
+}
+
+.luis-info .item .contenido h1 {
+  font-size: 5rem;
+  font-family: "Rubik Glitch", cursive;
+}
+
+.luis-info .item .contenido p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.luis-info .item .icon-container h2 {
+  font-family: "Rubik Glitch", cursive;
+  font-size: 4rem;
+}
+
+.luis-info .item .icon-container .iconos {
+  font-size: 5rem;
+  gap: 5rem;
+}
+
+.luis-info .item .icon-container .iconos a {
+  color: var(--negro);
+}
+
+.luis-info .item .icon-container .iconos a:hover {
+  transform: rotate(15deg);
+}
+
+.luis-info .item .curriculum {
+  margin-top: 2rem;
+}
+
+.luis-info .item .curriculum .btn {
+  font-size: 3rem;
+}
+/*///////////////////////////////////// FOOTER ////////////////////////////////////////////*/
+
+.footer {
+  border-top: var(--borde);
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+.footer .logo-cont img {
+  width: 7rem;
+}
+
+.footer .logo-cont span {
+  font-size: 2.3rem;
+  color: var(--blanco);
+  font-family: "Rubik Glitch", cursive;
+}
+
+.footer .logo-cont p {
+  font-size: 1.5rem;
+}
+
+.footer .titulo {
+  border-bottom: var(--borde);
+  margin-bottom: 1rem;
+}
+
+.footer .icon-container a {
+  font-size: 4rem;
+  color: var(--rojo-main);
+  margin-top: 2rem;
+}
+
+.footer .icon-container a:hover {
+  color: var(--verde);
+  transform: scale(1.1);
+}
+
+.footer .form-cont .btn,
+.footer .form-cont .input,
+.footer .form-cont span {
+  font-size: 1.5rem;
+}
+
+.footer .form-cont .btn:hover {
+  background-color: var(--verde);
+  border: solid 1px var(--verde);
+}
